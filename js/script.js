@@ -28,6 +28,5 @@ function par(){
 
 function resultado(){
     opanterior.innerHTML = operacion + " ="
-    resultado = eval(operacion)
-    render_op.value = resultado
+    render_op.value= eval(operacion)
 }
