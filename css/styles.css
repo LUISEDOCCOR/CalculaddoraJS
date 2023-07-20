@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@700&family=Raleway:wght@500&family=Tektur&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tektur', cursive;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+header{
+    margin-bottom: 20px;
+}
+header input{
+    height: 150px;
+    width: 445px;
+    border: 2px solid #90ff17;
+    border-radius: 30px;
+    background-color: #002e34;
+    color: #90ff17;
+    font-size: 25px;
+    padding-left: 15px ;
+    padding-right: 15px ;
+
+}
+header #opanterior{
+    margin-top: 20px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 25px;
+    color: #90ff17;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.col{
+    display: flex;
+    gap: 15px;  
+}
+button, #button{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #90ff17;
+    background-color: #002e34;
+    color: #90ff17;
+    font-size: 30px;
+    border-radius: 100px ;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+@media screen and (max-width:500px ){
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    button, #button{
+        height: 50px;
+        width: 50px;
+    }
+    header input{
+        height: 75px;
+        width: 245px;
+        font-size: 20px;
+    }
+    header #opanterior{
+        font-size: 20px;
+    }
+
+}
