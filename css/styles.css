@@ -70,6 +70,7 @@ a{
 footer{
     display: flex;
     flex-direction: column;
+    color: #002e34;
 }
 @media screen and (max-width:500px ){
     body{
