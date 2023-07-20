@@ -6,6 +6,8 @@ let pa = true
 
 function add_value(op){
     operacion +=  op
+    operacion = operacion.replace("*", "x")
+    operacion = operacion.replace("/", "÷")
     render_op.value = operacion
 }
 
@@ -44,6 +46,8 @@ function resultado(){
     }else{
         render_op.style.textAlign = "left"
         opanterior.innerHTML = operacion + " ="
+        operacion = operacion.replace("x", "*")
+        operacion = operacion.replace("÷", "÷")
         render_op.value= eval(operacion)
     }
 }
