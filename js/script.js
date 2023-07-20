@@ -10,6 +10,7 @@ function add_value(op){
 function ac(){
     operacion = " "
     render_op.value = operacion
+    opanterior.innerHTML = ""
 }
 
 let pa = true
@@ -27,5 +28,6 @@ function par(){
 
 function resultado(){
     opanterior.innerHTML = operacion + " ="
-    render_op.value = eval(operacion)
+    resultado = eval(operacion)
+    render_op.value = resultado
 }

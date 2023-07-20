@@ -71,6 +71,7 @@ button, #button{
         height: 75px;
         width: 245px;
         font-size: 20px;
+        border-radius: 15px;
     }
     header #opanterior{
         font-size: 20px;
