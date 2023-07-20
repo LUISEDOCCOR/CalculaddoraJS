@@ -1,6 +1,6 @@
 let render_op = document.getElementById("render_op")
 let opanterior = document.getElementById("opanterior")
-let operacion = ""
+let operacion = " "
 let pa = true
 
 
@@ -37,6 +37,13 @@ function backspace(){
 }
 
 function resultado(){
-    opanterior.innerHTML = operacion + " ="
-    render_op.value= eval(operacion)
+    if(operacion == " " || operacion == undefined){
+     render_op.value= "No Data"
+     render_op.style.textAlign = "center"
+
+    }else{
+        render_op.style.textAlign = "left"
+        opanterior.innerHTML = operacion + " ="
+        render_op.value= eval(operacion)
+    }
 }

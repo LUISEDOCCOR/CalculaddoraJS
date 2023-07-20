@@ -63,6 +63,14 @@ button, #button{
     justify-content: center;
     align-items: center;
 }
+a{
+    text-decoration: none;
+    color: #90ff17;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
 @media screen and (max-width:500px ){
     body{
         margin-left: 20px;
