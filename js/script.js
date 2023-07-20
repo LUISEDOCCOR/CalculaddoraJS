@@ -26,6 +26,12 @@ function par(){
 
 }
 
+function backspace(){
+    let opedit = operacion
+    operacion = opedit.slice(0, -1)
+    render_op.value =  operacion
+}
+
 function resultado(){
     opanterior.innerHTML = operacion + " ="
     render_op.value= eval(operacion)

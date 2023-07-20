@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <!-- iconos -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Calculadora</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
     </header>
     <main>
         <div class="col">
-            <button onclick="ac()">AC</button>
+            <button onclick="ac()" class="span"><span class="material-symbols-outlined">delete</span></button>
             <button onclick="par()">()</button>
             <button onclick="add_value('%')">%</button>
             <button onclick="add_value('/')">÷</button>
@@ -49,9 +50,11 @@
             <button onclick="add_value('0')">0</button>
             <button onclick="add_value('.')">.</button>
             <button onclick="resultado()">=</button>
-            <a id="button"><span class="material-symbols-outlined"> developer_mode</span></a>
+            <button onclick="backspace()" class="span"><span class="material-symbols-outlined">backspace</span></button>
         </div>
-
+        
+            
+        </div>
     </main>
 </body>
 </html>
